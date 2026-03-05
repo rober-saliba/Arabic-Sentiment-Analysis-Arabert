@@ -35,5 +35,14 @@ To run this notebook locally or in Google Colab:
    ```bash
    git clone [https://github.com/rober-saliba/Arabic-Sentiment-Analysis-Arabert.git](https://github.com/rober-saliba/Arabic-Sentiment-Analysis-Arabert.git)
 2.Ensure you have the required libraries installed:
+  ```bash
   pip install transformers tensorflow pandas numpy scikit-learn matplotlib
-3.Open the .ipynb file in Jupyter or upload it directly to Google Colab and run the cells sequentially.
+```
+3. Open the `.ipynb` file in Jupyter or upload it directly to Google Colab and run the cells sequentially.
+
+
+
+
+
+
+
