@@ -1,7 +1,14 @@
 # 🤖 Arabic Sentiment Analysis using AraBERT
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Colab" />
+</p>
+
 # 📌 Project Overview
-This repository features an NLP project that fine-tunes the **AraBERT (v0.2-base)** model for binary sentiment analysis on Arabic text. Using transfer learning, the model is trained to classify inputs as either **Positive (إيجابي)** or **Negative (سلבי)** with high precision.
+This repository features an NLP project that fine-tunes the **AraBERT (v0.2-base)** model for binary sentiment analysis on Arabic text. Using transfer learning, the model is trained to classify inputs as either **Positive (إيجابي)** or **Negative (سلبي)** with high precision.
 
 This project was developed for the Mining and Machine Learning course at **Braude Academic College**.
 
