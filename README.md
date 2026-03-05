@@ -16,7 +16,7 @@ This project was developed for the Mining and Machine Learning course at **Braud
 ## 📂 Repository Structure
 * **`Arabic Sentiment Analysis using AraBERT.ipynb`**: The primary Jupyter Notebook featuring the full pipeline: preprocessing, fine-tuning, training, and evaluation.
 * **`Final Word.docx`**: Technical report detailing the methodology, architecture, and academic results.
-* **`Fine-tune BERT model for Sentiment Analysis in Google.pptx`**: Presentation summarizing project execution and key findings.
+
 
 ## 🚀 Model Architecture & Pipeline
 1. [cite_start]**Preprocessing:** Leveraged the `arabert_preprocess` library to handle Arabic-specific challenges like tashkeel removal, tatweel removal, and character normalization[cite: 1, 2].
@@ -29,7 +29,7 @@ The model achieves exceptional performance on the AJGT test set:
 * [cite_start]**Accuracy:** ~94% [cite: 2, 3]
 * [cite_start]**Loss:** ~0.19 [cite: 3]
 * [cite_start]**Key Finding:** AraBERT significantly outperforms traditional RNN/LSTM architectures in Arabic sentiment tasks due to its transformer-based attention mechanism[cite: 2].
-* 
+  
 ## 💻 How to Run
 To run this notebook locally or in Google Colab:
 1. Clone the repository:
