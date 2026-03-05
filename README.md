@@ -1,42 +1,43 @@
 # 🤖 Arabic Sentiment Analysis using AraBERT
 
-## 📌 Project Overview
-This repository contains a Machine Learning project focused on Natural Language Processing (NLP). It fine-tunes the **AraBERT** (Arabic Bidirectional Encoder Representations from Transformers) model to perform binary sentiment analysis on Arabic text, classifying inputs as either **Positive (إيجابي)** or **Negative (سلبي)**.
+# 📌 Project Overview
+This repository features an NLP project that fine-tunes the **AraBERT (v0.2-base)** model for binary sentiment analysis on Arabic text. Using transfer learning, the model is trained to classify inputs as either **Positive (إيجابي)** or **Negative (سلבי)** with high precision.
 
-This project was developed as part of the Mining and Machine Learning course at Braude Academic College.
+This project was developed for the Mining and Machine Learning course at **Braude Academic College**.
 
 ## 🛠️ Tech Stack & Libraries
-* **Language:** Python
-* **Machine Learning Framework:** TensorFlow / Keras
-* **NLP & Transformers:** Hugging Face `transformers` (AutoTokenizer, TFAutoModelForSequenceClassification)
-* **Data Processing:** Pandas, NumPy, Scikit-learn (`train_test_split`)
-* **Visualization:** Matplotlib
-* **Environment:** Jupyter Notebook / Google Colab
+* **Language:** `Python`
+* **Deep Learning Framework:** `TensorFlow` / `Keras`
+* **NLP & Transformers:** Hugging Face `transformers` (`AutoTokenizer`, `TFAutoModelForSequenceClassification`)
+* **Data Science:** `Pandas`, `NumPy`, `Scikit-learn`
+* **Visualization:** `Matplotlib`
+* **Dataset:** Arabic Jordanian General Tweets (AJGT)
 
 ## 📂 Repository Structure
-* `Arabic Sentiment Analysis using AraBERT.ipynb`: The main Jupyter Notebook containing the data preprocessing, model fine-tuning, training loops, and evaluation metrics.
-* `Final Word.docx`: Comprehensive project report detailing the methodology, architecture, and academic findings.
-* `Fine-tune BERT model for Sentiment Analysis in Google.pptx`: Slide deck summarizing the project execution and results.
+* **`Arabic Sentiment Analysis using AraBERT.ipynb`**: The primary Jupyter Notebook featuring the full pipeline: preprocessing, fine-tuning, training, and evaluation.
+* **`Final Word.docx`**: Technical report detailing the methodology, architecture, and academic results.
+* **`Fine-tune BERT model for Sentiment Analysis in Google.pptx`**: Presentation summarizing project execution and key findings.
 
 ## 🚀 Model Architecture & Pipeline
-1. **Data Preprocessing:** Handled Arabic text tokenization using AraBERT's specialized tokenizer to properly manage complex Arabic morphology and dialect nuances.
-2. **Dataset Splitting:** Divided the data into training and testing sets utilizing a reproducible random seed (`42`).
-3. **Fine-Tuning:** Adapted the pre-trained BERT architecture for sequence classification, leveraging transfer learning to achieve high accuracy on a specific Arabic dataset.
-4. **Evaluation:** Assessed model performance utilizing standard ML metrics including validation accuracy and loss.
+1. [cite_start]**Preprocessing:** Leveraged the `arabert_preprocess` library to handle Arabic-specific challenges like tashkeel removal, tatweel removal, and character normalization[cite: 1, 2].
+2. [cite_start]**Fine-Tuning:** Specifically utilized **AraBERT v0.2-base**, which is pre-trained on a massive 77GB Arabic corpus, allowing for deep contextual understanding[cite: 1, 3].
+3. [cite_start]**Training:** Fine-tuned on the **AJGT dataset** (1,800 annotated tweets) using a 10% validation split and a reproducible random seed (42)[cite: 1, 2].
+4. [cite_start]**Optimization:** Implemented a Learning Rate of $2 \times 10^{-5}$ and the Adam optimizer for stable convergence[cite: 2, 3].
 
 ## 📊 Results & Performance
-The model was evaluated on a dedicated testing set to measure its classification accuracy. By leveraging the pre-trained AraBERT architecture, the fine-tuned model successfully achieved high accuracy in distinguishing between positive and negative Arabic sentiment. 
-
-* **Key Finding:** The model demonstrated a strong capability in the contextual understanding of Arabic sentence structures, effectively differentiating between positive ('إيجابي') and negative ('سلبي') sentiment markers.
-
+The model achieves exceptional performance on the AJGT test set:
+* [cite_start]**Accuracy:** ~94% [cite: 2, 3]
+* [cite_start]**Loss:** ~0.19 [cite: 3]
+* [cite_start]**Key Finding:** AraBERT significantly outperforms traditional RNN/LSTM architectures in Arabic sentiment tasks due to its transformer-based attention mechanism[cite: 2].
+* 
 ## 💻 How to Run
 To run this notebook locally or in Google Colab:
 1. Clone the repository:
    ```bash
    git clone [https://github.com/rober-saliba/Arabic-Sentiment-Analysis-Arabert.git](https://github.com/rober-saliba/Arabic-Sentiment-Analysis-Arabert.git)
 2.Ensure you have the required libraries installed:
-  ```bash
-  pip install transformers tensorflow pandas numpy scikit-learn matplotlib
+   ```bash
+   pip install transformers tensorflow pandas numpy scikit-learn matplotlib
 ```
 3. Open the `.ipynb` file in Jupyter or upload it directly to Google Colab and run the cells sequentially.
 
